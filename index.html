@@ -1,0 +1,197 @@
+<html style="">
+
+<head>
+  <link href="https://s3.amazonaws.com/codecademy-content/courses/ltp2/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Oswald:400,300" rel="stylesheet" type="text/css">
+  <style>
+    body {
+      overflow: hidden;
+    }
+
+    html,
+    body {
+      background-color: #ededeb;
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      width: 420px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .social {
+      background-color: #ffffff;
+      padding-top: 9px;
+      padding-bottom: 9px;
+      text-align: center;
+    }
+
+    .social ul {
+      list-style: none;
+      padding-left: 0;
+      margin: 0;
+    }
+
+    .social li {
+      color: #cccccc;
+      display: inline;
+      font-size: 13px;
+    }
+
+    .header {
+      margin-top: 36px;
+      margin-bottom: 50px;
+      text-align: center;
+    }
+
+    .logo-icon {
+      margin-right: 5px;
+    }
+
+    .dropdown {
+      display: inline;
+      margin-left: 10px;
+    }
+
+    .dropdown-toggle {
+      color: #363636;
+      font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+      font-size: 24px;
+      text-decoration: none;
+      cursor: pointer;
+    }
+
+    .dropdown-toggle i {
+      margin-left: 10px;
+    }
+
+    .dropdown-menu {
+      text-align: left;
+    }
+
+    .dropdown-menu {
+      font-size: 17px;
+      margin-top: 5px;
+      min-width: 105px;
+    }
+
+    .dropdown-menu li {
+      padding: 5px 0;
+      cursor: pointer;
+    }
+
+    .dropdown-menu li span {
+      color: #898989;
+      padding: 0px 15px;
+      font-size: 17px;
+    }
+
+    .slide {
+      height: 500px;
+    }
+
+    .slide-copy h1 {
+      color: #363636;
+      font-family: "Oswald", sans-serif;
+      font-weight: 400;
+      font-size: 27px;
+    }
+
+    .slide-copy p {
+      color: #959595;
+      font-family: Helvetica, sans-serif;
+      font-size: 15px;
+      margin-bottom: 14px;
+      margin-top: 14px;
+    }
+
+    .get-app {
+      list-style: none;
+      margin-top: 9px;
+      padding-bottom: 9px;
+      padding-left: 0px;
+      padding-top: 9px;
+      text-align: center;
+    }
+
+    .get-app li {
+      display: inline;
+    }
+
+    .get-app img {
+      height: 50px;
+      margin-bottom: 6px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="social">
+    <ul>
+      <li> <span class="fa-stack"> <i class="fa fa-circle fa-stack-2x"></i> <i class="fa fa-twitter fa-stack-1x fa-inverse"></i> </span> </li>
+      <li> <span class="fa-stack"> <i class="fa fa-circle fa-stack-2x"></i> <i class="fa fa-google-plus fa-stack-1x fa-inverse"></i> </span> </li>
+      <li> <span class="fa-stack"> <i class="fa fa-circle fa-stack-2x"></i> <i class="fa fa-facebook fa-stack-1x fa-inverse"></i> </span> </li>
+    </ul>
+  </div>
+  <div class="header"> <img class="logo-icon" src="https://s3.amazonaws.com/codecademy-content/courses/ltp2/img/flipboard/logo.png">
+    <div class="dropdown"> <span class="dropdown-toggle">Flipboard <i class="fa fa-caret-down"></i> </span>
+      <ul class="dropdown-menu" style="display: none;">
+        <li><span>Obtenir l'app</span></li>
+        <li><span>Magazines</span></li>
+        <li><span>Outils web</span></li>
+        <li><span>Communauté</span></li>
+        <li><span>Support</span></li>
+      </ul>
+    </div>
+  </div>
+  <div class="slide">
+    <div class="container">
+      <div class="slide-copy">
+        <h1>Flipboard est votre Magazine Personnel</h1>
+        <p>C'est un endroit unique pour découvrir, collecter et partager
+          les nouvelles qui vous intéressent. Ajoutez vos réseaux sociaux,
+          vos publications et vos blogs favoris pour rester en contact avec les sujets et
+          les personnes les plus proches de vous.</p>
+        <ul class="get-app">
+          <li><span><img src="https://s3.amazonaws.com/codecademy-content/courses/ltp2/img/flipboard/ios.png"></span></li>
+          <li><span><img src="https://s3.amazonaws.com/codecademy-content/courses/ltp2/img/flipboard/android.png"></span></li>
+          <li><span><img src="https://s3.amazonaws.com/codecademy-content/courses/ltp2/img/flipboard/windows.png"></span></li>
+          <li><span><img src="https://s3.amazonaws.com/codecademy-content/courses/ltp2/img/flipboard/blackberry.png"></span></li>
+        </ul>
+        <div class="clearfix"></div>
+      </div>
+    </div>
+  </div>
+
+  <script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+
+  <script type="text/javascript">
+
+  var main = function(){
+
+    $('.dropdown-toggle').click(function(){
+
+      $('.dropdown-menu').toggle();
+
+    });
+
+
+  }
+
+  $(document).ready(main);
+
+  </script>
+
+
+
+
+
+</body>
+
+</html>
